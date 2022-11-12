@@ -16,7 +16,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LanguageController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.pages.home');
 });
 
 Auth::routes();
