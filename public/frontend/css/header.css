@@ -233,6 +233,14 @@ li > a:only-child:after { content: ''; }
 		text-decoration:none;
 		border:none;
 	}
+	.col-md-4{
+		display: none;
+	}
+	.slid-content {
+		width: 100%;
+		height: 150px;
+		margin-top: -50px;
+	}
 
 	/* .toggle:hover {
 		background-color: #a4a4a4;
@@ -304,12 +312,60 @@ li > a:only-child:after { content: ''; }
 	}
 
 }
-@media only screen and (max-width: 900px) and (min-width: 400px)  {
+@media only screen and (max-width: 1246px) and (min-width: 996px)  {
+	.nav-pills{
+		margin-top: 96px;
+	}
+	.nav>li, .nav>li>a {
+		font-size: 15px;
+		display: block;
+		position: relative;
+	}
+
+}
+@media only screen and (max-width: 1246px) and (min-width: 400px)  {
+	.tab{
+		margin-top: -94px;
+	}
+	.img-read img {
+		max-width: 100%;
+		max-height: 100%;
+		height: auto;
+		width: auto;
+	}
+	.text-danger, p{
+		font-size: 11px;
+	}
+	.h5, h5 {
+		font-size: 14px;
+	}
+	.img-read {
+		width: 115%;
+		height: 94px;
+		/* max-height: 76px; */
+	}
+	.badge{
+		font-size: 10px !important;
+	}
+	.textnew h5 {
+		font-size: 14px;
+	}
+	.card-text {
+		color: black;
+		font-size: 13px;
+		margin-top: -4px;
+	}
+	.btn-primary{
+		font-size: 10px;
+	}
+	.social {
+		width: 96.3%;
+	}
 	.logo img {
 		border-radius: 100px;
 		text-align: center;
-		width: 12% !important;
-		height: 12% !important
+		width: 10% !important;
+		height: 10% !important
 	}
 	.logo .logo-name {
 		margin-top: 5px;
@@ -317,7 +373,7 @@ li > a:only-child:after { content: ''; }
 		/* float: right; */
 		font-family: "khmer OS Muol",sans-serif;
 		text-align: center;
-		font-size: 11px !important;
+		font-size: 12px !important;
 	}
 }
 
@@ -327,5 +383,29 @@ li > a:only-child:after { content: ''; }
 		display:block;
 		width: 94%;
 	}
+}
 
+@media all and (max-width : 414px) {
+	.logo img {
+		border-radius: 100px;
+		text-align: center;
+		width: 22% !important;
+		height: 10% !important;
+	}
+	.logo .logo-name{
+		font-size: 9px !important;
+	}
+}
+@media all and (max-width : 390px) {
+	.nav-pills {
+		margin-top: 114px;
+	}
+	.logo img {
+		border-radius: 100px;
+		text-align: center;
+		width: 20%;
+	}
+	.logo .logo-name {
+		font-size: 8px !important;
+	}
 }

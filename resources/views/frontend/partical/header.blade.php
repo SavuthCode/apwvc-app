@@ -8,7 +8,9 @@
     </div>
             
     </div>
+  
   <nav>
+  <div class="container">
     <div class="container-fluid">
     <label for="drop" class="toggle">
     <div class="container" onclick="myFunction(this)" style="color:white:0px;font-size:10px;">
@@ -29,7 +31,7 @@
           <ul>
 
               <li><a href="#"><img scr="{{asset('frontend/images/khmer.jpg')}}">ភាសាខ្មែរ</a></li>
-              <li><a href="#"><i class="flag flag-united-states"></i>អងគ្លេស</a></li>
+              <li><a href="#"><i class="flag flag-united-states"></i>English</a></li>
           </ul>
         </li>
         <li>
@@ -45,6 +47,9 @@
         </li>
       </ul>
       </div>
-    </nav>   
+      </div>
+    </nav>
+
+     
   </div>
 </div>
