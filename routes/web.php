@@ -18,6 +18,9 @@ use App\Http\Controllers\LanguageController;
 Route::get('/', function () {
     return view('frontend.pages.home');
 });
+Route::get('frontend/detail-page',function() {
+    return view('frontend.pages.detail-page');
+});
 
 Auth::routes();
 Route::get('locale/{locale}',function ($locale)

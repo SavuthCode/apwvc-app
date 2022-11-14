@@ -541,8 +541,12 @@ nav > div a.nav-item.nav-link:focus {
     .slid-content img{
         width: 100%;
         height: 100% !important;
+        
         /* object-fit:  */
 
+    }
+    .detail-img img{
+        margin-top: 112px !important;
     }
     
     .nav-pills {

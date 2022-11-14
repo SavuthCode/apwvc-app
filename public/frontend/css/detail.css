@@ -9,8 +9,9 @@
     height: 40px;
     background-color: white;
 }
-.fb-share-button{
+.fb-share-button {
     padding: 10px;
+    margin-top: -12px;
 }
 .home-tabs>li.title>a {
     font-size: 18px;
@@ -66,4 +67,7 @@
     width: 100%;
     background-color: aqua;
     overflow: hidden;
+}
+.tab-content {
+    margin-top: -19px;
 }
