@@ -1,5 +1,6 @@
-body{
-    font-family: khmer os content;
+
+* {
+    font-family: "khmer os content";
 }
 /* Add a black background color to the top navigation */
 /* sidebar */
@@ -8,7 +9,7 @@ body{
     vertical-align: -15%;
 }
 .introduction {
-    margin-top: -37px !important;
+    margin-top: 14px !important;
 }
 .content-home {
     height: 45px;
@@ -66,7 +67,7 @@ body{
 
 }
 .row_new{
-    margin-top: 20px;
+    margin-top: 31px;
 }
 p{
     font-size: 14px;
@@ -120,7 +121,7 @@ p{
 .slid-content {
     width: 100%;
     height: 350px;
-    margin-top: -50px;
+    margin-top: 14px;
 }
 .slid-content img {
     max-width: 100%;
@@ -422,6 +423,14 @@ nav > div a.nav-item.nav-link:focus {
     }
 }
 @media screen and (max-width: 600px) {
+
+    .language, .user-profile {
+        padding-left: 15px;
+    }
+	.wrapper nav {
+		padding: 0px;
+	}
+
     .fa-bars{
         color: white;
     }
@@ -437,10 +446,7 @@ nav > div a.nav-item.nav-link:focus {
         cursor: pointer;
         color: blue;
     }
-    .wrapper nav {
-        padding: 0 10px;
-    
-    }
+  
     .content .logo a {
         font-size: 27px;
     }
@@ -545,16 +551,12 @@ nav > div a.nav-item.nav-link:focus {
         /* object-fit:  */
 
     }
-    .detail-img img{
-        margin-top: 112px !important;
-    }
-    
     .nav-pills {
         margin-top: 204px;
     }
-    .introduction {
-        /* margin-top: -50px !important; */
-    }
+    /* .introduction {
+        margin-top: 14px !important;
+    } */
     .image-content img{
         width: 100%;
         height: 120px !important;
@@ -633,9 +635,6 @@ nav > div a.nav-item.nav-link:focus {
     .textnew h5{
         font-size: 12px;
     }
-    .introduction {
-        /* margin-top: -37px !important; */
-    }
 }
 @media only screen and (max-width: 900px) and (min-width: 750px)  {
     .nav-pills {
@@ -643,5 +642,17 @@ nav > div a.nav-item.nav-link:focus {
         padding-left: 0;
         margin-bottom: 0;
         list-style: none;
+    }
+}
+
+@media only screen and (max-width: 769px) and (min-width: 390px)  {
+    .slid-content{
+        margin-top: 18px;
+    }
+}
+
+@media only screen and (max-width: 1247px) and (min-width: 600px)  {
+    .slid-content{
+        margin-top: 18px;
     }
 }

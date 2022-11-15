@@ -1,5 +1,5 @@
 <div id="other" class="container  tab-pane fade" >
-            <div class="row" style="margin-top: 15px;">
+            <div class="row" style="margin-top:31px;">
               <div class="col-6 col-sm-6 col6new">
                 <div class="image-content">
                 <a href="{{url('frontend/detail-page')}}"><img src="{{asset('frontend/images/new/n1.jpg')}}" alt="Card image" style="width:100%;height:200px;" /></a>

@@ -1,5 +1,10 @@
 @extends('frontend.pages.master')
-
+@section("slide-content")
+    <div class="slid-content" style="background:gray">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+    </div>
+  </div>
+@endsection
 @section('content')
 <div class="tab" >
     <ul class="nav nav-pills" role="tablist">

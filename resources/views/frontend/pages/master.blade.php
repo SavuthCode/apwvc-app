@@ -21,6 +21,11 @@
   <link rel="stylesheet" href="{{asset('frontend/css/detail.css')}}">
   <link rel="stylesheet" href="{{asset('frontend/css/header.css')}}">
   <link rel="stylesheet" href="{{asset('frontend/css/footer.css')}}">
+
+  <!-- light box link -->
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link href="js/lightboxed/lightboxed.css" rel="stylesheet" />
 </head>
 
 <body style="background-color:#e9eaed;">
@@ -28,40 +33,21 @@
 
 
 @include("frontend.partical.header")
+<div class="container">
+@yield("slide-content")
+</div>
 
 <!-- end header -->
-<div class="container" style="font-family:khmer os content">
+<div class="container" style="font-family:khmer os content;margin-top: -102px;">
 <br><br>
-  <div class="slid-content" style="background:gray">
-  <div id="demo" class="carousel slide" data-ride="carousel">
-  <!-- <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul> -->
-  <!-- <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="{{asset('frontend/images/new/n1.jpg')}}" alt="Los Angeles">
-    </div>
-    <div class="carousel-item">
-      <img src="{{asset('frontend/images/new/n3.jpg')}}" alt="Chicago">
-
-    </div>
-    <div class="carousel-item">
-      <img src="{{asset('frontend/images/new/n2.jpg')}}" alt="New York">
+<!-- @yield("slide-content") -->
+  <!-- <div class="slid-content" style="background:gray">
+    <div id="demo" class="carousel slide" data-ride="carousel">
     </div>
   </div> -->
-  <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev"> -->
-    <!-- <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a> -->
-</div>
-  </div>
   <div class="wrapper-content" >
     <div class="row introduction">
-      <div class="col-md-4" style="overflow:hidden">
+      <div class="col-md-4 sidebar-col4" style="overflow:hidden">
         <!-- sidar -->
           @include("frontend.partical.sidebar")
         <!-- end sidebar -->
@@ -71,7 +57,11 @@
       </div>
     </div>
     <br>
-    <div class="slider">
+</div>
+<div class="container-fruid" style="background:#fff">
+<div class="container">
+<br/>
+<div class="slider">
     <!-- Nav tabs -->
     <ul class="nav nav-tabs">
       <li class="nav-item" >
@@ -129,12 +119,17 @@
   </div>
 </div>
 </div>
+</div>
+
 @include("frontend.partical.footer")
 
 </body>
+
+
+@yield("script")
 <script src="jquery.min.js"></script>
 <script src="{{asset('js/owl.carousel.min.js')}}"></script>
-
+<script src="{{asset('frontend/js/lightboxed/lightboxed.js')}}"></script>
 </script>
 <script>
 (function(d, s, id) {

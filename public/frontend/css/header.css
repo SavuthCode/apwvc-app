@@ -133,16 +133,18 @@ nav ul {
 	margin:0;
 	list-style: none;
 	position: relative;
+	z-index: 1000 !important;
 	}
 	
 /* Positioning the navigation items inline */
 nav ul li {
 	margin: 0px;
 	display:inline-block;
-	float: left;
 	background-color: #254441;
 	}
-
+.menu {
+	text-align: left;
+}
 /* Styling the links */
 nav a {
 	display:block;
@@ -197,13 +199,18 @@ nav ul ul ul li {
 /* Change ' +' in order to change the Dropdown symbol */
 /* li > a:after { content:  ' +'; } */
 li > a:only-child:after { content: ''; }
-
+.menu li a {
+	text-decoration: none;
+}
+.menu li a:hover {
+	color: burlywood;
+}
 
 /* Media Queries
 --------------------------------------------- */
 
 @media all and (max-width : 768px) {
-
+	
 	#logo {
 		display: block;
 		padding: 0;
@@ -219,27 +226,38 @@ li > a:only-child:after { content: ''; }
 	/* Hide the navigation menu by default */
 	/* Also hide the  */
 	.toggle + a,
+
 	.menu {
+		background-color: #fff;
+		position: absolute;
 		display: none;
+		width: 100%;
+	}
+
+	.menu li a:hover  {
+		color: burlywood;
 	}
 
 	/* Stylinf the toggle lable */
 	.toggle {
 		display: block;
-		background-color: #254441;
-		padding:14px 20px;	
+		padding:14px 6px;	
 		color:#FFF;
 		font-size:17px;
 		text-decoration:none;
 		border:none;
 	}
-	.col-md-4{
+	.sidebar-col4{
 		display: none;
 	}
+	/* .col-md-4{
+		display: none;
+	} */
 	.slid-content {
+		margin-bottom: 36px;
 		width: 100%;
 		height: 224px;
-		margin-top: -50px;
+		margin-top: 25px;
 	}
 
 	/* .toggle:hover {

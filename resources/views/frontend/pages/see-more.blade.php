@@ -1,5 +1,7 @@
-<div id="home" class="container  tab-pane active" style="margin-top:-17px;">
-  <div class="row row_new">
+@extends('frontend.pages.master')
+
+@section('content')
+<div class="row row_new">
     <div class="col-6 col-sm-6 col6new">
       <a href="http://localhost:8000/frontend/detail-page">
       <div class="image-content">
@@ -70,6 +72,4 @@
       </div>
     </div>
   </div>
-  <br>
-  <center style="margin-top: -15px;"><button class="btn btn-primary">Read more...</button></center>
-</div>
+@endsection

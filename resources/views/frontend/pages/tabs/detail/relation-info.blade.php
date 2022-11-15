@@ -1,5 +1,5 @@
-<div id="home" class="container tab-pane active" style="margin-top:20px;">
-            <div class="row" style="margin-bottom: 14px;">
+<div id="home detial_re" class="container tab-pane active" style="margin-top:20px;">
+            <div class="row">
               <div class="col-6 col-sm-6 col6new">
                 <div class="image-content">
                   <img src="{{asset('frontend/images/new/n1.jpg')}}" alt="Card image" style="width:100%;height:200px;" />

@@ -21,6 +21,9 @@ Route::get('/', function () {
 Route::get('frontend/detail-page',function() {
     return view('frontend.pages.detail-page');
 });
+Route::get('frontend/see-more',function(){
+    return view('frontend.pages.see-more');
+});
 
 Auth::routes();
 Route::get('locale/{locale}',function ($locale)
